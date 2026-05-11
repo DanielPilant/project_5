@@ -1,0 +1,166 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "username": "alice",
+      "email": "alice@example.com",
+      "website": "alice123"
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "username": "bob",
+      "email": "bob@example.com",
+      "website": "bob456"
+    },
+    {
+      "username": "thrh",
+      "website": "123",
+      "name": "daniel",
+      "email": "doubledan148@gmail.com",
+      "id": 3
+    },
+    {
+      "username": "1",
+      "website": "1",
+      "name": "1",
+      "email": "doubledan148studies@gmail.com",
+      "id": 4
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Buy groceries",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "title": "Finish report",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "title": "Walk the dog",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "title": "Pay bills",
+      "completed": true
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Hello World",
+      "body": "This is my first post."
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "title": "Thoughts on coffee",
+      "body": "Coffee is essential for productivity."
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "title": "Weekend hiking",
+      "body": "Went hiking and it was amazing."
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "title": "Book review",
+      "body": "Just finished a great book."
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "name": "Great post",
+      "email": "reader1@example.com",
+      "body": "Nice introduction!"
+    },
+    {
+      "id": 2,
+      "postId": 2,
+      "name": "Agree",
+      "email": "reader2@example.com",
+      "body": "Coffee is life."
+    },
+    {
+      "id": 3,
+      "postId": 3,
+      "name": "Where",
+      "email": "reader3@example.com",
+      "body": "Which trail did you take?"
+    },
+    {
+      "id": 4,
+      "postId": 4,
+      "name": "Recommend",
+      "email": "reader4@example.com",
+      "body": "Please share the title."
+    }
+  ],
+  "albums": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Vacation 2025"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "title": "Family Pics"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "title": "Mountain Trip"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "title": "City Lights"
+    }
+  ],
+  "photos": [
+    {
+      "id": 1,
+      "albumId": 1,
+      "title": "Beach sunset",
+      "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=150"
+    },
+    {
+      "id": 2,
+      "albumId": 2,
+      "title": "Family dinner",
+      "url": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=150"
+    },
+    {
+      "id": 3,
+      "albumId": 3,
+      "title": "Mountain peak",
+      "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=150"
+    },
+    {
+      "id": 4,
+      "albumId": 4,
+      "title": "Night skyline",
+      "url": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=600",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=150"
+    }
+  ]
+}
