@@ -40,7 +40,7 @@
       "id": 2,
       "userId": 1,
       "title": "Finish report",
-      "completed": true
+      "completed": false
     },
     {
       "id": 3,
