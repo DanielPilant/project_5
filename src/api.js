@@ -83,3 +83,30 @@ export async function getAlbumPhotos(albumId, page = 1) {
   if (!response.ok) throw new Error("Failed to load photos");
   return await response.json();
 }
+
+export async function deletePhoto(photoId) {
+  const response = await fetch(`${API_URL}/photos/${photoId}`, {
+    method: "DELETE",
+  });
+  if (!response.ok) throw new Error("Failed to delete photo");
+}
+
+export async function updatePhoto(photoId, data) {
+  const response = await fetch(`${API_URL}/photos/${photoId}`, {
+    method: "PATCH",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+  if (!response.ok) throw new Error("Failed to update photo");
+  return await response.json();
+}
+
+export async function addPhoto(photoData) {
+  const response = await fetch(`${API_URL}/photos`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(photoData),
+  });
+  if (!response.ok) throw new Error("Failed to add photo");
+  return await response.json();
+}

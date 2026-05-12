@@ -1,0 +1,359 @@
+body:has(.albums-page) {
+  background: #0b1220;
+}
+
+.albums-page {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #e5e7eb;
+}
+
+.albums-page h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0 0 1.25rem;
+  color: #f9fafb;
+}
+
+.albums-page h3,
+.albums-page h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 0.6rem;
+  color: #e5e7eb;
+}
+
+.albums-page .error {
+  background: #3f1d1d;
+  border: 1px solid #7f1d1d;
+  color: #fca5a5;
+  padding: 0.55rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin: 0 0 1rem;
+}
+
+.albums-page .albums-empty {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin: 0.75rem 0;
+}
+
+.albums-page .back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #818cf8;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.albums-page .back-link:hover {
+  color: #a5b4fc;
+  text-decoration: underline;
+}
+
+/* Search */
+.albums-page .albums-search {
+  margin-bottom: 1.25rem;
+}
+
+.albums-page .albums-search__input {
+  width: 100%;
+  max-width: 360px;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #0f172a;
+  color: #e5e7eb;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.albums-page .albums-search__input::placeholder {
+  color: #6b7280;
+}
+
+.albums-page .albums-search__input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
+
+/* Forms */
+.albums-page .album-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem;
+  background: #0f172a;
+  border: 1px solid #1f2937;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.albums-page .album-form__title {
+  flex-basis: 100%;
+  margin: 0 0 0.25rem;
+}
+
+.albums-page .album-form input {
+  flex: 1 1 180px;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: #111827;
+  color: #e5e7eb;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.albums-page .album-form input::placeholder {
+  color: #6b7280;
+}
+
+.albums-page .album-form input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
+
+/* Buttons */
+.albums-page .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease,
+    color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.albums-page .btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.albums-page .btn--primary {
+  background: #6366f1;
+  color: #fff;
+  border-color: #6366f1;
+}
+
+.albums-page .btn--primary:hover:not(:disabled) {
+  background: #818cf8;
+  border-color: #818cf8;
+}
+
+.albums-page .btn--ghost {
+  background: transparent;
+  color: #d1d5db;
+  border-color: #374151;
+}
+
+.albums-page .btn--ghost:hover:not(:disabled) {
+  background: #1f2937;
+  border-color: #4b5563;
+  color: #f3f4f6;
+}
+
+.albums-page .btn--small {
+  padding: 0.3rem 0.65rem;
+  font-size: 0.8rem;
+}
+
+/* Album list */
+.albums-page .album-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.albums-page .album-item {
+  background: #1f2937;
+  border: 1px solid #2d3748;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  padding: 0;
+}
+
+.albums-page .album-item__toggle {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  padding: 0.9rem 1.1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e5e7eb;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.albums-page .album-item__toggle:hover {
+  background: #273244;
+  color: #a5b4fc;
+}
+
+.albums-page .album-item__content {
+  padding: 1rem 1.1rem 1.1rem;
+  border-top: 1px solid #2d3748;
+  background: #1a2332;
+}
+
+/* Photo grid */
+.albums-page .photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.albums-page .photo-grid__empty {
+  grid-column: 1 / -1;
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin: 0.25rem 0;
+}
+
+/* Photo card */
+.albums-page .photo-item {
+  position: relative;
+  background: #1f2937;
+  border: 1px solid #2d3748;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.albums-page .photo-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  border-color: #3f4a5f;
+}
+
+.albums-page .photo-item__img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  background: #0f172a;
+}
+
+.albums-page .photo-item__caption {
+  padding: 0.65rem 0.8rem 0.8rem;
+  font-size: 0.85rem;
+  color: #d1d5db;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.albums-page .photo-item__title {
+  line-height: 1.35;
+  color: #f3f4f6;
+  word-break: break-word;
+}
+
+.albums-page .photo-item__actions {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.albums-page .photo-item__edit {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.albums-page .photo-item__edit input {
+  width: 100%;
+  padding: 0.4rem 0.55rem;
+  border: 1px solid #334155;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  background: #111827;
+  color: #e5e7eb;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.albums-page .photo-item__edit input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+}
+
+.albums-page .photo-item__delete {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.85);
+  color: #d1d5db;
+  border: 1px solid #374151;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  backdrop-filter: blur(2px);
+  transition: background-color 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.albums-page .photo-item__delete:hover {
+  background: #dc2626;
+  color: #fff;
+  border-color: #dc2626;
+}
+
+/* Load more */
+.albums-page .load-more {
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem 0 0.25rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .albums-page {
+    margin: 1rem;
+    padding: 1.25rem;
+    border-radius: 8px;
+  }
+
+  .albums-page .photo-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.6rem;
+  }
+
+  .albums-page .photo-item__img {
+    height: 130px;
+  }
+
+  .albums-page .album-form input,
+  .albums-page .album-form .btn {
+    flex: 1 1 100%;
+  }
+}
