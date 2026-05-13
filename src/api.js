@@ -42,3 +42,21 @@ export async function getPostComments(postId) {
   if (!res.ok) throw new Error("Failed to fetch comments");
   return res.json();
 }
+
+export async function createTodo(todo) {
+  const res = await fetch(`${API_URL}/todos`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(todo),
+  });
+  if (!res.ok) throw new Error('Failed to create todo');
+  return res.json();
+}
+
+export async function deleteTodo(todoId) {
+  const res = await fetch(`${API_URL}/todos/${todoId}`, {
+    method: 'DELETE',
+  });
+  if (!res.ok) throw new Error('Failed to delete todo');
+  return res.json();
+}
