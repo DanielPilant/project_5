@@ -57,12 +57,6 @@
   ],
   "posts": [
     {
-      "id": 1,
-      "userId": 1,
-      "title": "Hello World",
-      "body": "This is my first post."
-    },
-    {
       "id": 2,
       "userId": 1,
       "title": "Thoughts on coffee",
@@ -79,16 +73,15 @@
       "userId": 2,
       "title": "Book review",
       "body": "Just finished a great book."
+    },
+    {
+      "userId": 1,
+      "title": "Welcome!",
+      "body": "This is my first post.",
+      "id": 5
     }
   ],
   "comments": [
-    {
-      "id": 1,
-      "postId": 1,
-      "name": "Great post",
-      "email": "reader1@example.com",
-      "body": "Nice introduction!"
-    },
     {
       "id": 2,
       "postId": 2,
@@ -109,6 +102,13 @@
       "name": "Recommend",
       "email": "reader4@example.com",
       "body": "Please share the title."
+    },
+    {
+      "postId": 2,
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "body": "Indeed!",
+      "id": 5
     }
   ],
   "albums": [
