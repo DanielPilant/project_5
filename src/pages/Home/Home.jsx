@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getCurrentUser, clearCurrentUser } from '../auth.js';
-import InfoModal from '../components/InfoModal.jsx';
+import { getCurrentUser, clearCurrentUser } from '../../auth.js';
+import InfoModal from '../../components/InfoModal.jsx';
 
 export default function Home() {
   const navigate = useNavigate();

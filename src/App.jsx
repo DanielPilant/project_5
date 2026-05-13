@@ -1,10 +1,10 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Login from './pages/Login.jsx';
-import Register from './pages/Register.jsx';
-import Home from './pages/Home.jsx';
+import Login from './pages/Login/Login.jsx';
+import Register from './pages/Register/Register.jsx';
+import Home from './pages/Home/Home.jsx';
 import Todos from './pages/Todos.jsx';
 import Posts from './pages/Posts.jsx';
-import Albums from './pages/Albums.jsx';
+import Albums from './pages/Albums/Albums.jsx';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
 
 export default function App() {

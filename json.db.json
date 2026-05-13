@@ -113,16 +113,6 @@
   ],
   "albums": [
     {
-      "id": 1,
-      "userId": 1,
-      "title": "Vacation 2025"
-    },
-    {
-      "id": 2,
-      "userId": 1,
-      "title": "Family Pics"
-    },
-    {
       "id": 3,
       "userId": 2,
       "title": "Mountain Trip"
@@ -133,19 +123,22 @@
       "title": "City Lights"
     },
     {
-      "title": "dv",
+      "title": "The Stormlight Archive",
       "userId": 1,
       "id": 5
+    },
+    {
+      "title": "The Lord of the Rings",
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "title": "The Elder Scrolls",
+      "userId": 1,
+      "id": 7
     }
   ],
   "photos": [
-    {
-      "id": 2,
-      "albumId": 2,
-      "title": "Family dinner",
-      "url": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600",
-      "thumbnailUrl": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=150"
-    },
     {
       "id": 3,
       "albumId": 3,
@@ -162,10 +155,129 @@
     },
     {
       "albumId": 5,
-      "title": "my first photo",
-      "url": "https://wallpapers.com/images/hd/epic-battle-nxkj0vpvfmne5ykg.jpg",
-      "thumbnailUrl": "https://wallpapers.com/images/hd/epic-battle-nxkj0vpvfmne5ykg.jpg",
+      "title": "The Shattered Plains",
+      "url": "https://picsum.photos/seed/stormlight-shattered-plains/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/stormlight-shattered-plains/400/250",
+      "id": 5
+    },
+    {
+      "albumId": 5,
+      "title": "Highstorm Approaching",
+      "url": "https://picsum.photos/seed/stormlight-highstorm/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/stormlight-highstorm/400/250",
+      "id": 6
+    },
+    {
+      "albumId": 5,
+      "title": "Urithiru, the Tower of Stone",
+      "url": "https://picsum.photos/seed/stormlight-urithiru/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/stormlight-urithiru/400/250",
+      "id": 7
+    },
+    {
+      "albumId": 5,
+      "title": "Knights Radiant",
+      "url": "https://picsum.photos/seed/stormlight-radiant/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/stormlight-radiant/400/250",
+      "id": 8
+    },
+    {
+      "albumId": 5,
+      "title": "Kholinar at Dusk",
+      "url": "https://picsum.photos/seed/stormlight-kholinar/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/stormlight-kholinar/400/250",
+      "id": 9
+    },
+    {
+      "albumId": 5,
+      "title": "Bridge Four",
+      "url": "https://picsum.photos/seed/stormlight-bridge-four/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/stormlight-bridge-four/400/250",
+      "id": 10
+    },
+    {
+      "albumId": 6,
+      "title": "The Misty Mountains",
+      "url": "https://picsum.photos/seed/lotr-misty-mountains/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/lotr-misty-mountains/400/250",
+      "id": 11
+    },
+    {
+      "albumId": 6,
+      "title": "The Shire",
+      "url": "https://picsum.photos/seed/lotr-shire/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/lotr-shire/400/250",
+      "id": 12
+    },
+    {
+      "albumId": 6,
+      "title": "Lothlorien",
+      "url": "https://picsum.photos/seed/lotr-lothlorien/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/lotr-lothlorien/400/250",
+      "id": 13
+    },
+    {
+      "albumId": 6,
+      "title": "Minas Tirith",
+      "url": "https://picsum.photos/seed/lotr-minas-tirith/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/lotr-minas-tirith/400/250",
+      "id": 14
+    },
+    {
+      "albumId": 6,
+      "title": "Helm's Deep",
+      "url": "https://picsum.photos/seed/lotr-helms-deep/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/lotr-helms-deep/400/250",
       "id": 15
+    },
+    {
+      "albumId": 6,
+      "title": "Mount Doom",
+      "url": "https://picsum.photos/seed/lotr-mount-doom/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/lotr-mount-doom/400/250",
+      "id": 16
+    },
+    {
+      "albumId": 7,
+      "title": "Throat of the World",
+      "url": "https://picsum.photos/seed/tes-throat-of-the-world/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/tes-throat-of-the-world/400/250",
+      "id": 17
+    },
+    {
+      "albumId": 7,
+      "title": "Whiterun",
+      "url": "https://picsum.photos/seed/tes-whiterun/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/tes-whiterun/400/250",
+      "id": 18
+    },
+    {
+      "albumId": 7,
+      "title": "Solitude",
+      "url": "https://picsum.photos/seed/tes-solitude/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/tes-solitude/400/250",
+      "id": 19
+    },
+    {
+      "albumId": 7,
+      "title": "Markarth",
+      "url": "https://picsum.photos/seed/tes-markarth/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/tes-markarth/400/250",
+      "id": 20
+    },
+    {
+      "albumId": 7,
+      "title": "Riften",
+      "url": "https://picsum.photos/seed/tes-riften/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/tes-riften/400/250",
+      "id": 21
+    },
+    {
+      "albumId": 7,
+      "title": "Sovngarde",
+      "url": "https://picsum.photos/seed/tes-sovngarde/800/500",
+      "thumbnailUrl": "https://picsum.photos/seed/tes-sovngarde/400/250",
+      "id": 22
     }
   ]
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getUserAlbums } from "../../../api.js";
+import { getUserAlbums } from "../api.js";
 
 export function useAlbums(userId) {
   const [albums, setAlbums] = useState([]);

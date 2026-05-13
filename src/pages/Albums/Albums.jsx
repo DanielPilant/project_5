@@ -6,14 +6,14 @@ import {
   deletePhoto,
   updatePhoto,
   addPhoto,
-} from "../../../api.js";
-import { useAlbums } from "../hooks/useAlbums.js";
-import AlbumSearch from "./AlbumSearch.jsx";
-import CreateAlbumForm from "./CreateAlbumForm.jsx";
-import AlbumList from "./AlbumList.jsx";
-import "../albums.css";
+} from "./api.js";
+import { useAlbums } from "./hooks/useAlbums.js";
+import AlbumSearch from "./components/AlbumSearch.jsx";
+import CreateAlbumForm from "./components/CreateAlbumForm.jsx";
+import AlbumList from "./components/AlbumList.jsx";
+import "./albums.css";
 
-export default function AlbumsContainer() {
+export default function Albums() {
   const { userId } = useParams();
   const { albums, setAlbums, loading, error, setError } = useAlbums(userId);
 

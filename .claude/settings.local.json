@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"const db = require\\('c:/repos/fullstack_proj/project_5/json.db.json'\\); const alice = db.users.find\\(u => u.name && u.name.toLowerCase\\(\\).includes\\('alice'\\)\\); console.log\\('alice:', JSON.stringify\\(alice\\)\\); const aliceAlbums = db.albums.filter\\(a => a.userId === alice.id\\); console.log\\('albums:', JSON.stringify\\(aliceAlbums\\)\\); console.log\\('photo counts:', aliceAlbums.map\\(a => \\({id:a.id, n: db.photos.filter\\(p=>p.albumId===a.id\\).length}\\)\\)\\); console.log\\('max album id:', Math.max\\(...db.albums.map\\(a=>a.id\\)\\)\\); console.log\\('max photo id:', Math.max\\(...db.photos.map\\(p=>p.id\\)\\)\\);\")",
+      "Bash(netstat -ano)",
+      "Bash(findstr :3000)",
+      "Bash(curl -s http://localhost:3000/users/1/albums)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/photos/2)",
+      "Bash(curl -s -o /dev/null -w \"photo15: %{http_code}\\\\n\" http://localhost:3000/photos/15)",
+      "Bash(curl -s -o /dev/null -w \"album5 delete: %{http_code}\\\\n\" -X DELETE http://localhost:3000/albums/5)",
+      "Bash(curl -s http://localhost:3000/albums/__TRACKED_VAR__/photos)",
+      "Bash(curl -s \"http://localhost:3000/albums/7/photos\")",
+      "Bash(node -e \"let s='';process.stdin.on\\('data',d=>s+=d\\).on\\('end',\\(\\)=>{const photos=JSON.parse\\(s\\);console.log\\(photos.map\\(p=>p.title\\).join\\('\\\\n'\\)\\)}\\)\")"
+    ]
+  }
+}

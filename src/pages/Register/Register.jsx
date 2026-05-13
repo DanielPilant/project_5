@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { getUserByUsername, createUser } from '../api.js';
-import { setCurrentUser } from '../auth.js';
+import { getUserByUsername } from '../../api.js';
+import { createUser } from './api.js';
+import { setCurrentUser } from '../../auth.js';
 
 export default function Register() {
   const navigate = useNavigate();
