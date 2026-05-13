@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getUserByUsername } from '../../api.js';
-import { setCurrentUser } from '../../auth.js';
+import { UserContext } from '../../contexts/UserContext.jsx';
 
 export default function Login() {
   const navigate = useNavigate();
+  const { login } = useContext(UserContext);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -20,7 +21,7 @@ export default function Login() {
         setError('Invalid username or password');
         return;
       }
-      setCurrentUser(user);
+      login(user);
       navigate('/home');
     } catch {
       setError('Login failed. Is the server running?');

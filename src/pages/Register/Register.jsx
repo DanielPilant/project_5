@@ -1,11 +1,12 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getUserByUsername } from '../../api.js';
 import { createUser } from './api.js';
-import { setCurrentUser } from '../../auth.js';
+import { UserContext } from '../../contexts/UserContext.jsx';
 
 export default function Register() {
   const navigate = useNavigate();
+  const { login } = useContext(UserContext);
   const [step, setStep] = useState(1);
   const [credentials, setCredentials] = useState({
     username: '',
@@ -51,7 +52,7 @@ export default function Register() {
         name: details.name,
         email: details.email,
       });
-      setCurrentUser(newUser);
+      login(newUser);
       navigate('/home');
     } catch {
       setError('Registration failed');

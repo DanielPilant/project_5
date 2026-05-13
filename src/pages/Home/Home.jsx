@@ -1,15 +1,15 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getCurrentUser, clearCurrentUser } from '../../auth.js';
+import { UserContext } from '../../contexts/UserContext.jsx';
 import InfoModal from '../../components/InfoModal.jsx';
 
 export default function Home() {
   const navigate = useNavigate();
-  const currentUser = getCurrentUser();
+  const { currentUser, logout } = useContext(UserContext);
   const [showInfo, setShowInfo] = useState(false);
 
   function handleLogout() {
-    clearCurrentUser();
+    logout();
     navigate('/login');
   }
 
