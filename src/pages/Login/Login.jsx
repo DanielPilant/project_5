@@ -2,7 +2,7 @@ import { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getUserByUsername } from '../../api.js';
 import { UserContext } from '../../contexts/UserContext.jsx';
-import './login.css';
+import '../auth.css';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -32,16 +32,16 @@ export default function Login() {
   }
 
   return (
-    <div className="login-page">
-      <div className="login-card">
+    <div className="auth-page">
+      <div className="auth-card">
         <h1>Welcome back</h1>
-        <p className="login-card__subtitle">Sign in to continue to your account.</p>
-        <form className="login-form" onSubmit={handleSubmit}>
-          <div className="login-form__field">
+        <p className="auth-card__subtitle">Sign in to continue to your account.</p>
+        <form className="auth-form" onSubmit={handleSubmit}>
+          <div className="auth-form__field">
             <label htmlFor="username">Username</label>
             <input
               id="username"
-              className="login-form__input"
+              className="auth-form__input"
               type="text"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
@@ -50,11 +50,11 @@ export default function Login() {
               required
             />
           </div>
-          <div className="login-form__field">
+          <div className="auth-form__field">
             <label htmlFor="password">Password</label>
             <input
               id="password"
-              className="login-form__input"
+              className="auth-form__input"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -66,13 +66,13 @@ export default function Login() {
           {error && <p className="error">{error}</p>}
           <button
             type="submit"
-            className="login-form__submit"
+            className="auth-form__submit"
             disabled={submitting}
           >
             {submitting ? 'Logging in...' : 'Log in'}
           </button>
         </form>
-        <p className="login-card__footer">
+        <p className="auth-card__footer">
           No account? <Link to="/register">Register</Link>
         </p>
       </div>
