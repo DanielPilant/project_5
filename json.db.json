@@ -1,0 +1,226 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "username": "alice",
+      "email": "alice@example.com",
+      "website": "alice123"
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "username": "bob",
+      "email": "bob@example.com",
+      "website": "bob456"
+    },
+    {
+      "username": "thrh",
+      "website": "123",
+      "name": "daniel",
+      "email": "doubledan148@gmail.com",
+      "id": 3
+    },
+    {
+      "username": "1",
+      "website": "1",
+      "name": "1",
+      "email": "doubledan148studies@gmail.com",
+      "id": 4
+    },
+    {
+      "username": "Daniel",
+      "website": "Daniel123",
+      "name": "daniel pilant",
+      "email": "doubledan148@gmail.com",
+      "id": 5
+    },
+    {
+      "username": "david",
+      "website": "david123",
+      "name": "david cohen",
+      "email": "david@example.com",
+      "id": 6
+    }
+  ],
+  "todos": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Buy groceries",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "title": "Finish reportdv",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "title": "Walk the dog",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "title": "Pay bills",
+      "completed": true
+    }
+  ],
+  "posts": [
+    {
+      "id": 2,
+      "userId": 1,
+      "title": "Thoughts on coffee",
+      "body": "Coffee is essential for productivity."
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "title": "Weekend hiking",
+      "body": "Went hiking and it was amazing."
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "title": "Book review",
+      "body": "Just finished a great book."
+    },
+    {
+      "userId": 1,
+      "title": "Welcome!",
+      "body": "This is my first post.",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "title": "dgnf",
+      "body": "gn",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 2,
+      "postId": 2,
+      "name": "Agree",
+      "email": "reader2@example.com",
+      "body": "Coffee is life."
+    },
+    {
+      "id": 3,
+      "postId": 3,
+      "name": "Where",
+      "email": "reader3@example.com",
+      "body": "Which trail did you take?"
+    },
+    {
+      "id": 4,
+      "postId": 4,
+      "name": "Recommend",
+      "email": "reader4@example.com",
+      "body": "Please share the title."
+    },
+    {
+      "postId": 2,
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "body": "Indeed!",
+      "id": 5
+    }
+  ],
+  "albums": [
+    {
+      "id": 3,
+      "userId": 2,
+      "title": "Mountain Trip"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "title": "City Lights"
+    },
+    {
+      "title": "The Stormlight Archive",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "title": "The Lord of the Rings",
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "title": "The Elder Scrolls",
+      "userId": 1,
+      "id": 7
+    }
+  ],
+  "photos": [
+    {
+      "id": 3,
+      "albumId": 3,
+      "title": "Mountain peak",
+      "url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=150"
+    },
+    {
+      "id": 4,
+      "albumId": 4,
+      "title": "Night skyline",
+      "url": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=600",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=150"
+    },
+    {
+      "albumId": 5,
+      "title": "Kaladin & Szeth",
+      "url": "https://cdn.shopify.com/s/files/1/0886/8082/5106/files/stormlight5_1.webp",
+      "thumbnailUrl": "https://cdn.shopify.com/s/files/1/0886/8082/5106/files/stormlight5_1.webp",
+      "id": 5
+    },
+    {
+      "albumId": 5,
+      "title": "Shallan Davar",
+      "url": "https://uploads.17thshard.com/monthly_2020_07/Whelan_Stormlight_Shallan.jpg.29b37bf5c658da884b1c2a7d10be9c04.jpg",
+      "thumbnailUrl": "https://uploads.17thshard.com/monthly_2020_07/Whelan_Stormlight_Shallan.jpg.29b37bf5c658da884b1c2a7d10be9c04.jpg",
+      "id": 6
+    },
+    {
+      "albumId": 5,
+      "title": "The colin family",
+      "url": "https://cdna.artstation.com/p/assets/images/images/045/954/322/large/omar-seitisleam-final-1800x1000.jpg?1643927877",
+      "thumbnailUrl": "https://cdna.artstation.com/p/assets/images/images/045/954/322/large/omar-seitisleam-final-1800x1000.jpg?1643927877",
+      "id": 7
+    },
+    {
+      "albumId": 6,
+      "title": "Sauron",
+      "url": "https://preview.redd.it/what-makes-the-dark-lord-sauron-stand-out-amongst-fictional-v0-7lkp7sxb7bqb1.jpg?auto=webp&s=e8833d4c1a66326f91a57512e1aef7f9bf36f71f",
+      "thumbnailUrl": "https://preview.redd.it/what-makes-the-dark-lord-sauron-stand-out-amongst-fictional-v0-7lkp7sxb7bqb1.jpg?auto=webp&s=e8833d4c1a66326f91a57512e1aef7f9bf36f71f",
+      "id": 9
+    },
+    {
+      "albumId": 6,
+      "title": "Azug",
+      "url": "https://i.pinimg.com/originals/84/d8/62/84d8626ebbdd55a511daf26e35a03f9a.jpg",
+      "thumbnailUrl": "https://i.pinimg.com/originals/84/d8/62/84d8626ebbdd55a511daf26e35a03f9a.jpg",
+      "id": 10
+    },
+    {
+      "albumId": 7,
+      "title": "Hail Sithis",
+      "url": "https://storage.ning.com/topology/rest/1.0/file/get/8319373265?profile=RESIZE_710x",
+      "thumbnailUrl": "https://storage.ning.com/topology/rest/1.0/file/get/8319373265?profile=RESIZE_710x",
+      "id": 11
+    },
+    {
+      "albumId": 7,
+      "title": "c0da",
+      "url": "https://c0da.es/wp-content/uploads/2024/08/apocalypse_v5_2560.png",
+      "thumbnailUrl": "https://c0da.es/wp-content/uploads/2024/08/apocalypse_v5_2560.png",
+      "id": 12
+    }
+  ]
+}

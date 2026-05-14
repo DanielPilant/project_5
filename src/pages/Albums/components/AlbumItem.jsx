@@ -17,7 +17,8 @@ export default function AlbumItem({
         className="album-item__toggle"
         onClick={() => onToggle(album.id)}
       >
-        {album.title}
+        <span className="album-item__id">ID: {album.id}</span>
+        <span className="album-item__title">{album.title}</span>
       </button>
       {isOpen && (
         <div className="album-item__content">

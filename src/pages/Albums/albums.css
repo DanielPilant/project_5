@@ -203,6 +203,26 @@ body:has(.albums-page) {
   color: #e5e7eb;
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.albums-page .album-item__id {
+  flex: 0 0 auto;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #a5b4fc;
+  background: rgba(99, 102, 241, 0.15);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+}
+
+.albums-page .album-item__title {
+  flex: 1 1 auto;
+  word-break: break-word;
 }
 
 .albums-page .album-item__toggle:hover {

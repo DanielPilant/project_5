@@ -6,7 +6,7 @@ import {
   deletePhoto,
   updatePhoto,
   addPhoto,
-} from "./api.js";
+} from "../../api.js";
 import { useAlbums } from "./hooks/useAlbums.js";
 import AlbumSearch from "./components/AlbumSearch.jsx";
 import CreateAlbumForm from "./components/CreateAlbumForm.jsx";

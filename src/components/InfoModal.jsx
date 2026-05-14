@@ -4,11 +4,13 @@ export default function InfoModal({ user, onClose }) {
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         <h2>User Info</h2>
         <ul>
-          {Object.entries(user).map(([key, value]) => (
-            <li key={key}>
-              <strong>{key}:</strong> {String(value)}
-            </li>
-          ))}
+          {Object.entries(user)
+            .filter(([key]) => key !== 'website')
+            .map(([key, value]) => (
+              <li key={key}>
+                <strong>{key}:</strong> {String(value)}
+              </li>
+            ))}
         </ul>
         <button onClick={onClose}>Close</button>
       </div>

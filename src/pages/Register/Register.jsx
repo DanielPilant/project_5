@@ -1,7 +1,6 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { getUserByUsername } from "../../api.js";
-import { createUser } from "./api.js";
+import { getUserByUsername, createUser } from "../../api.js";
 import { UserContext } from "../../contexts/UserContext.jsx";
 import "../auth.css";
 
