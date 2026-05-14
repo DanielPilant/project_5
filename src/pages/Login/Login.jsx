@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getUserByUsername } from '../../api.js';
 import { UserContext } from '../../contexts/UserContext.jsx';
+import './login.css';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -31,37 +32,50 @@ export default function Login() {
   }
 
   return (
-    <div className="page">
-      <h1>Login</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="username">Username</label>
-          <input
-            id="username"
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label htmlFor="password">Password</label>
-          <input
-            id="password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        {error && <p className="error">{error}</p>}
-        <button type="submit" disabled={submitting}>
-          {submitting ? 'Logging in...' : 'Log in'}
-        </button>
-      </form>
-      <p>
-        No account? <Link to="/register">Register</Link>
-      </p>
+    <div className="login-page">
+      <div className="login-card">
+        <h1>Welcome back</h1>
+        <p className="login-card__subtitle">Sign in to continue to your account.</p>
+        <form className="login-form" onSubmit={handleSubmit}>
+          <div className="login-form__field">
+            <label htmlFor="username">Username</label>
+            <input
+              id="username"
+              className="login-form__input"
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Enter your username"
+              autoComplete="username"
+              required
+            />
+          </div>
+          <div className="login-form__field">
+            <label htmlFor="password">Password</label>
+            <input
+              id="password"
+              className="login-form__input"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Enter your password"
+              autoComplete="current-password"
+              required
+            />
+          </div>
+          {error && <p className="error">{error}</p>}
+          <button
+            type="submit"
+            className="login-form__submit"
+            disabled={submitting}
+          >
+            {submitting ? 'Logging in...' : 'Log in'}
+          </button>
+        </form>
+        <p className="login-card__footer">
+          No account? <Link to="/register">Register</Link>
+        </p>
+      </div>
     </div>
   );
 }
