@@ -67,6 +67,12 @@
       "userId": 2,
       "title": "Pay bills",
       "completed": true
+    },
+    {
+      "userId": 1,
+      "title": "my todo",
+      "completed": false,
+      "id": 5
     }
   ],
   "posts": [
@@ -93,12 +99,6 @@
       "title": "Welcome!",
       "body": "This is my first post.",
       "id": 5
-    },
-    {
-      "userId": 1,
-      "title": "dgnf",
-      "body": "gn",
-      "id": 6
     }
   ],
   "comments": [

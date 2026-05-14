@@ -151,6 +151,31 @@ body:has(.home-page) {
   transform: translateX(3px);
 }
 
+.home-activity {
+  margin-top: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  color: #d1d5db;
+  font-size: 0.95rem;
+}
+
+.home-activity h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  color: #f9fafb;
+}
+
+.home-activity div {
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #1f2937;
+}
+
+.home-activity div:last-child {
+  border-bottom: none;
+}
+
 /* Dark modal override scoped to the home page */
 .home-page .modal-overlay {
   position: fixed;

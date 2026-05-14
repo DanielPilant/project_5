@@ -1,7 +1,8 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../../contexts/UserContext.jsx";
 import InfoModal from "../../components/InfoModal.jsx";
+import { getLatestTodo, getLatestPost, getLatestAlbum } from "../../api.js";
 import "./home.css";
 
 const ROUTE_CARDS = [
@@ -29,6 +30,15 @@ export default function Home() {
   const navigate = useNavigate();
   const { currentUser, logout } = useContext(UserContext);
   const [showInfo, setShowInfo] = useState(false);
+  const [latestTodo, setLatestTodo] = useState(null);
+  const [latestPost, setLatestPost] = useState(null);
+  const [latestAlbum, setLatestAlbum] = useState(null);
+
+  useEffect(() => {
+    getLatestTodo(currentUser.id).then(setLatestTodo).catch(() => {});
+    getLatestPost(currentUser.id).then(setLatestPost).catch(() => {});
+    getLatestAlbum(currentUser.id).then(setLatestAlbum).catch(() => {});
+  }, [currentUser.id]);
 
   function handleLogout() {
     logout();
@@ -78,6 +88,13 @@ export default function Home() {
             <span className="home-card__cta">Open {card.title} →</span>
           </button>
         ))}
+      </section>
+
+      <section className="home-activity">
+        <h2>Recent Activity</h2>
+        <div>Latest Todo: {latestTodo ? latestTodo.title : "—"}</div>
+        <div>Latest Post: {latestPost ? latestPost.title : "—"}</div>
+        <div>Latest Album: {latestAlbum ? latestAlbum.title : "—"}</div>
       </section>
 
       {showInfo && (

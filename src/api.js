@@ -180,3 +180,30 @@ export async function deletePhoto(photoId) {
   });
   if (!res.ok) throw new Error("Failed to delete photo");
 }
+
+export async function getLatestTodo(userId) {
+  const res = await fetch(
+    `${API_URL}/users/${userId}/todos?_sort=id&_order=desc&_limit=1`,
+  );
+  if (!res.ok) throw new Error("Failed to fetch latest todo");
+  const data = await res.json();
+  return data[0] || null;
+}
+
+export async function getLatestPost(userId) {
+  const res = await fetch(
+    `${API_URL}/users/${userId}/posts?_sort=id&_order=desc&_limit=1`,
+  );
+  if (!res.ok) throw new Error("Failed to fetch latest post");
+  const data = await res.json();
+  return data[0] || null;
+}
+
+export async function getLatestAlbum(userId) {
+  const res = await fetch(
+    `${API_URL}/users/${userId}/albums?_sort=id&_order=desc&_limit=1`,
+  );
+  if (!res.ok) throw new Error("Failed to fetch latest album");
+  const data = await res.json();
+  return data[0] || null;
+}
